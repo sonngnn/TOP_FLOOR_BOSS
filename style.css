@@ -1,0 +1,19 @@
+.animation {
+    text-align: center;
+    padding: 20px;
+	color: red;
+}
+
+.fade-in-out {
+    animation: fadeInOut 4s ease-in-out infinite;
+    opacity: 0; /* Start with text invisible */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Text is invisible at the beginning and end of animation */
+    }
+    50% {
+        opacity: 1; /* Text is fully visible at the middle of the animation */
+    }
+}
